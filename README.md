@@ -94,6 +94,8 @@ so that JAM1 will run with random number seed 195809 and generate output file "Y
   Here, job_number should run from 1 to 1000 if 1000 jobs are submitted. 
 
 # 4 JAM1 Parameter setup 
+No need to check this part for download and run JAM1  
+
 The key parameters in the main5.f are: 
   ```
     mstc(6) = 101 
