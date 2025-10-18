@@ -89,7 +89,7 @@ so that JAM1 will run with random number seed 195809 and generate output file "Y
   I don't test with this part. In the job submission file, I suggest include the following:
 
       cd ~/Event_Generator/jam1/main
-      random_num=$(od -An -N2 -i /dev/urandom | tr -d ' ') 
+      random_num=$(od -An -N3 -i /dev/urandom | tr -d ' ') 
       ./jamexe $((random_num+job_number)) $job_number
   Here, job_number should run from 1 to 1000 if 1000 jobs are submitted. 
 
